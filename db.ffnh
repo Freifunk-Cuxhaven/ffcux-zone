@@ -1,7 +1,8 @@
 $TTL 86400
 $ORIGIN ffnh.
-@                                 IN        SOA   vpn0.ffnh. admin.ffnh.net. (
-                                  2017042501 ; serial
+;                                                 primary-master admin-mail
+@                                 IN        SOA   00.gw.ffnh. admin.ffnord.net. (
+                                  2017042502 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
