@@ -1,7 +1,7 @@
 $TTL 86400
-$ORIGIN ffnord.
+$ORIGIN ffnh.
 @                                 IN        SOA   vpn0.ffnh. admin.ffnh.net. (
-                                  2017042301 ; serial
+                                  2017042501 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
