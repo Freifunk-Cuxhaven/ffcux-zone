@@ -2,36 +2,36 @@ $TTL 86400
 $ORIGIN ffnh.
 ;                                                 primary-master admin-mail
 @                                 IN        SOA   00.gw.ffnh. heini66@gmail.com. (
-                                  2017042503 ; serial
+                                  2017070401 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
                                   1d)        ; ttl
 ; Nameserver
-                                  IN		NS    00.gw
 ;                                 IN		NS    01.gw
-;                                 IN		NS    02.gw
+                                 IN		NS    02.gw
 ;                                 IN		NS    03.gw
 ;                                 IN		NS    04.gw
 				  
 ; Hosts
-
-00.gw                    86400    IN		A     	10.71.0.1
-                                    		AAAA  fd8f:14c7:d318::fd00
-;01.gw                    86400    IN		A    	10.71.8.1
+;01.gw                    86400    IN		A     	10.71.0.1
 ;                                    		AAAA  fd8f:14c7:d318::fd01
+02.gw                    86400    IN		A     	10.71.3.1
+                                    		AAAA  fd8f:14c7:d318::fd02
+;03.gw                    86400    IN		A     	10.71.5.1
+;                                    		AAAA  fd8f:14c7:d318::fd03
 				    
 ; NTP Server
-00.ntp.services          86400     IN		A     	10.71.0.1
-                                     		AAAA  fd8f:14c7:d318::fd00
+02.ntp.services          86400     IN		A     	10.71.3.1
+                                     		AAAA  fd8f:14c7:d318::fd02
 ; Update Server
-0.update                 86400     IN		A     	10.71.0.1
-                                     		AAAA  fd8f:14c7:d318::fd00
+0.update                 86400     IN		A     	10.71.62.1
+                                     		AAAA  fd8f:14c7:d318::fd15
 ; Nextnode
 node			 86400     IN		A     	10.71.254.254
 				     		AAAA  fd8f:14c7:d318::ffff
+						
 local-node               86400     IN		CNAME node
 localnode                86400     IN		CNAME node
 next-node                86400     IN		CNAME node
 nextnode                 86400     IN		CNAME node
-
