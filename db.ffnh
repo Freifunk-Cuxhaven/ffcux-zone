@@ -8,7 +8,7 @@ $ORIGIN ffnh.
                                   1w         ; expire
                                   1d)        ; ttl
 ; Nameserver
-;                                 IN		NS    01.gw
+                                 IN		NS    01.gw
                                  IN		NS    02.gw
                                  IN		NS    03.gw
                                  IN		NS    04.gw
@@ -23,7 +23,7 @@ $ORIGIN ffnh.
 04.gw                    86400    IN		A     	10.71.7.1
 						AAAA  fd8f:14c7:d318::fd04			    
 ; NTP Server
-01.ntp.services          86400     IN		A     	10.71.1.1
+01.ntp.services          86400     IN		A     	10.71.0.1
                                      		AAAA  fd8f:14c7:d318::fd01
 02.ntp.services          86400     IN		A     	10.71.3.1
                                      		AAAA  fd8f:14c7:d318::fd02
