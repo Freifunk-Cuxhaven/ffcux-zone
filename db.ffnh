@@ -38,7 +38,7 @@ map	                 86400     IN		A     	10.71.62.1
                                      		AAAA  fd8f:14c7:d318::fd1
 ; Update Server
 0.update                 86400     IN		A     	10.71.62.1
-                                     		AAAA  fd8f:14c7:d318::fd15
+                                     		AAAA  fd8f:14c7:d318::fd08
 ; Nextnode
 node			 86400     IN		A     	10.71.254.254
 				     		AAAA  fd8f:14c7:d318::ffff
