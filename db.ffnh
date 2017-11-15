@@ -24,7 +24,7 @@ $ORIGIN ffnh.
 04.gw                    86400    IN		A     	10.71.7.1
 						AAAA  fd8f:14c7:d318::fd04
 map	                 86400     IN		A     	10.71.62.1
-                                     		AAAA  fd8f:14c7:d318::fd08
+                                     		AAAA  fd8f:14c7:d318::fd15
 ; NTP Server
 01.ntp.services          86400     IN		A     	10.71.0.1
                                      		AAAA  fd8f:14c7:d318::fd01
@@ -34,8 +34,6 @@ map	                 86400     IN		A     	10.71.62.1
                                      		AAAA  fd8f:14c7:d318::fd03
 04.ntp.services          86400     IN		A     	10.71.7.1
                                      		AAAA  fd8f:14c7:d318::fd04
-08.ntp.services          86400     IN		A     	10.71.62.1
-                                     		AAAA  fd8f:14c7:d318::fd08
 ; Update Server
 0.update                 86400     IN		A     	10.71.62.1
                                      		AAAA  fd8f:14c7:d318::ff15
