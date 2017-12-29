@@ -1,1 +1,1 @@
-# ffnord-zone
+# Freifunk Nordheide Zone
