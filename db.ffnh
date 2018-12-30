@@ -2,7 +2,7 @@ $TTL 86400
 $ORIGIN ffnh.
 ;                                                 primary-master admin-mail
 @                                 IN        SOA   00.ffnh. heini66@gmail.com. (
-                                  2017111602 ; serial
+                                  2018123001 ; serial
                                   1h         ; refresh
                                   15m        ; retry
                                   1w         ; expire
@@ -12,6 +12,7 @@ $ORIGIN ffnh.
                                  IN		NS    02.gw
                                  IN		NS    03.gw
                                  IN		NS    04.gw
+                                 IN		NS    05.gw
 				 IN		NS	map
 				  
 ; Hosts
@@ -23,6 +24,8 @@ $ORIGIN ffnh.
                                     		AAAA  fd8f:14c7:d318::ff03
 04.gw                    86400    IN		A     	10.71.7.1
 						AAAA  fd8f:14c7:d318::ff04
+05.gw                    86400    IN		A     	10.71.9.1
+						AAAA  fd8f:14c7:d318::ff05
 map	                 86400     IN		A     	10.71.62.1
                                      		AAAA  fd8f:14c7:d318::ff15
 ; NTP Server
@@ -34,6 +37,8 @@ map	                 86400     IN		A     	10.71.62.1
                                      		AAAA  fd8f:14c7:d318::ff03
 04.ntp.services          86400     IN		A     	10.71.7.1
                                      		AAAA  fd8f:14c7:d318::ff04
+05.ntp.services          86400     IN		A     	10.71.9.1
+                                     		AAAA  fd8f:14c7:d318::ff05
 ; Update Server
 0.update                 86400     IN		A     	10.71.62.1
                                      		AAAA  fd8f:14c7:d318::ff15
