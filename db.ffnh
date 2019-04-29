@@ -1,7 +1,7 @@
 $TTL 86400
-$ORIGIN ffnh.
+$ORIGIN ffcux.
 ;                                                 primary-master admin-mail
-@                                 IN        SOA   00.ffnh. heini66@gmail.com. (
+@                                 IN        SOA   00.ffnh. gateway@ffcux.net. (
                                   2019030401 ; serial
                                   1h         ; refresh
                                   15m        ; retry
@@ -9,42 +9,22 @@ $ORIGIN ffnh.
                                   1d)        ; ttl
 ; Nameserver
                                  IN		NS    01.gw
-                                 IN		NS    02.gw
-                                 IN		NS    03.gw
-                                 IN		NS    04.gw
-                                 IN		NS    karte
 				 IN		NS	map
 				  
 ; Hosts
-01.gw                    86400    IN		A     	10.71.0.1
-                                    		AAAA  fd8f:14c7:d318::ff01
-02.gw                    86400    IN		A     	10.71.3.1
-                                    		AAAA  fd8f:14c7:d318::ff02
-03.gw                    86400    IN		A     	10.71.5.1
-                                    		AAAA  fd8f:14c7:d318::ff03
-04.gw                    86400    IN		A     	10.71.7.1
-						AAAA  fd8f:14c7:d318::ff04
-karte                    86400    IN		A     	10.71.20.1
-						AAAA  fd8f:14c7:d318::ff05
-map	                 86400     IN		A     	10.71.62.1
-                                     		AAAA  fd8f:14c7:d318::ff15
+01.gw                    86400    IN		A     	10.115.0.1
+                                    		AAAA  fdec:c0f1:afda::ff01
+map	                 86400     IN		A     	10.115.0.10
+                                     		AAAA  fdec:c0f1:afda::ff10
 ; NTP Server
-01.ntp.services          86400     IN		A     	10.71.0.1
-                                     		AAAA  fd8f:14c7:d318::ff01
-02.ntp.services          86400     IN		A     	10.71.3.1
-                                     		AAAA  fd8f:14c7:d318::ff02
-03.ntp.services          86400     IN		A     	10.71.5.1
-                                     		AAAA  fd8f:14c7:d318::ff03
-04.ntp.services          86400     IN		A     	10.71.7.1
-                                     		AAAA  fd8f:14c7:d318::ff04
-05.ntp.services          86400     IN		A     	10.71.20.1
-                                     		AAAA  fd8f:14c7:d318::ff05
+01.ntp.services          86400     IN		A     	10.115.0.1
+                                     		AAAA  fdec:c0f1:afda::ff01
 ; Update Server
-0.update                 86400     IN		A     	10.71.62.1
-                                     		AAAA  fd8f:14c7:d318::ff15
+0.update                 86400     IN		A     	10.115.0.10
+                                     		AAAA  fdec:c0f1:afda::ff10
 ; Nextnode
-node			 86400     IN		A     	10.71.254.254
-				     		AAAA  fd8f:14c7:d318::ffff
+node			 86400     IN		A     	10.115.31.254
+				     		AAAA  fdec:c0f1:afda::ffff
 						
 local-node               86400     IN		CNAME node
 localnode                86400     IN		CNAME node
