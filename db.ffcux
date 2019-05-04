@@ -9,19 +9,15 @@ $ORIGIN ffcux.
                                   1d)        ; ttl
 ; Nameserver
                                  IN		NS    01.gw
-				 IN		NS	map
 				  
 ; Hosts
 01.gw                    86400    IN		A     	10.115.0.1
                                     		AAAA  fdec:c0f1:afda::ff01
-map	                 86400     IN		A     	10.115.0.10
-                                     		AAAA  fdec:c0f1:afda::ff10
 ; NTP Server
 01.ntp.services          86400     IN		A     	10.115.0.1
                                      		AAAA  fdec:c0f1:afda::ff01
 ; Update Server
-0.update                 86400     IN		A     	10.115.0.10
-                                     		AAAA  fdec:c0f1:afda::ff10
+
 ; Nextnode
 node			 86400     IN		A     	10.115.31.254
 				     		AAAA  fdec:c0f1:afda::ffff
